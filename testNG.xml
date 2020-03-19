@@ -1,8 +1,14 @@
-
-<suite name="TestSuite">
-    <test name="AutoQA">
+<suite name="Suite1" verbose="1" >
+    <test name="Google" >
         <classes>
-            <class name="GooglePageTest" />
+            <class name="com.page.google.GooglePageTest" />
+        </classes>
+    </test>
+
+    <test name="Mail">
+        <classes>
+            <class name="com.page.mail.HomeMailPageTest"/>
+            <class name="com.page.mail.HomePageNegativeTest"/>
         </classes>
     </test>
 </suite>
