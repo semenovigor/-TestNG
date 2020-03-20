@@ -11,14 +11,12 @@ import org.testng.annotations.AfterSuite;
 
 public class TestBase {
 
-    protected WebDriver driver;
-
+    protected static WebDriver driver;
 
 
     protected GooglePage googlePage = PageFactory.initElements(getDriver(), GooglePage.class);
 
     protected HomeMailPage homeMailPage = PageFactory.initElements(getDriver(), HomeMailPage.class);
-
 
 
     public WebDriver getDriver() {

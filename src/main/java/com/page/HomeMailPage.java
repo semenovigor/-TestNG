@@ -4,9 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class HomeMailPage extends BasePage{
-
-    WebDriver driver;
+public class HomeMailPage {
 
     @FindBy(name = "login")
     protected WebElement loginMail;
@@ -48,6 +46,14 @@ public class HomeMailPage extends BasePage{
     public boolean checkButtonLogout()
     {
         return buttonLogout.isDisplayed();
+    }
+
+    public void clearTextBox(){
+        loginMail.clear();
+    }
+
+    public void clickLoginTextBox(){
+        loginMail.click();
     }
 
 }

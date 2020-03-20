@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+
 public class HomeMailPageTest extends TestBase{
 
 
@@ -27,9 +28,13 @@ public class HomeMailPageTest extends TestBase{
     }
 
     @Test(priority = 4)
-    public void logoutMail() {
+    public void logoutMail(){
         homeMailPage.clickLogoutButton();
-    }
 
+    }
+    @Test(dependsOnMethods = "logoutMail")
+    public void clearInputTextBoxMail(){
+        homeMailPage.clearTextBox();
+    }
 
 }

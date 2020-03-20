@@ -7,9 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 
 
-public class GooglePage extends BasePage{
+public class GooglePage{
 
-     WebDriver driver;
+
 
      public final  static String MAIL = "Mail.ru: почта, поиск в интернете, новости, игры";
 

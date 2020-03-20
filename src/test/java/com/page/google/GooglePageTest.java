@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 public class GooglePageTest extends TestBase {
 
+
     @Test(priority = 1)
     public void checkIsGoogleLogo() {
         driver.get("https://www.google.by/");
