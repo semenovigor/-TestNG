@@ -40,5 +40,7 @@
     <orderEntry type="library" name="Maven: org.uncommons:reportng:1.1.2" level="project" />
     <orderEntry type="library" name="Maven: velocity:velocity:1.4" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: velocity:velocity-dep:1.4" level="project" />
+    <orderEntry type="library" name="Maven: javax.mail:mail:1.4.7" level="project" />
+    <orderEntry type="library" name="Maven: javax.activation:activation:1.1" level="project" />
   </component>
 </module>

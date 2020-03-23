@@ -1,5 +1,6 @@
 package com.page;
 
+import com.sendMail.SendMail;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,7 +19,7 @@ public class TestBase {
 
     protected HomeMailPage homeMailPage = PageFactory.initElements(getDriver(), HomeMailPage.class);
 
-
+    SendMail sendMail = new SendMail();
     public WebDriver getDriver() {
         if(driver==null){
 
@@ -36,5 +37,10 @@ public class TestBase {
     @AfterSuite
     public void quitGoogle(){
         driver.quit();
+    }
+
+    @AfterSuite
+    public void sendingMail(){
+        sendMail.sendMailFun();
     }
 }
